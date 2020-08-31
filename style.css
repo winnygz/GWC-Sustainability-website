@@ -1,0 +1,268 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: white; /* Change the font color*/
+  background-color: #98c9a3; /* Change the background color */
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  /*TODO: Change the font-family property to your linked font*/
+  color: #6A994E;
+  text-align: center;
+}
+
+/*TODO: Change the font-family property to your linked font*/
+h2 {
+  letter-spacing: 3px;
+  font-size: 45px;
+  color: #dde7c7;
+  text-align: center;
+  line-height: 0.5em;
+}
+
+p {
+  text-align: center;
+}
+
+/*TODO: Change the color of a link when a person hovers over it*/
+p a {
+  color: #43d6b9ff;
+  text-decoration: none;
+}
+
+li.resource-link {
+  text-align: center;
+  color: #453A67;
+  font-size: 25px;
+}
+
+.blurb {
+  font-size: 32px;
+  color: #453A67;
+}
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* All of these TODOs are optional. You should change the styling based on your mockup */
+
+/* TODO (optional): Change the background color and/or border style */
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #98C9A3;
+  border-style: solid;
+  border-color: #386641;
+}
+
+/* TODO (optional): Change the font size*/
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  font-size: 30px;
+  float: right;
+}
+
+/* TODO (optional): Change the font color, decoration, and/or case */
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #e9c46a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Marker Felt";
+}
+
+/* TODO (optional): Change the background color and/or font color when the mouse hovers over an item */
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #bc4749;
+  color: #43d6b9ff;
+}
+
+li.un {
+  list-style-type: none;
+}
+li.un a {
+  color: #dde7c7;
+}
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+/* TODO: Review the CSS properties to the flexbox container for title and intro text */
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+  background-color: #F2E8CF;
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 40%; /* Change this value to move the box up or down */
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+.heading-home {
+  font-family: "Recursive", sans-serif;
+  padding: 2%;
+  color: #6A994E;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+.title {
+  font-family: "Krona One", sans-serif;
+  padding: 13%;
+  color: #ffb627;
+  font-size: 100px;
+  letter-spacing: 5px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-smoothing: antialiased;
+  text-shadow: 0 8px black;
+}
+
+/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+.intro-text {
+  background-color: #2d6a4f; /* Add your own background color */
+  padding: 4%;
+  margin: 3%;
+  color: #6A994E; /* Add the color of your font */
+  font-size: 20px; /* Add your font size*/
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center;
+  font-family: "Lora", serif;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+/* TODO (optional): Change the background color and/or text alignment */
+
+.text-section {
+  background-color: #264653;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+/* TODO: Add the CSS selector for each image to the collective image rule set */
+
+.main-message,
+.image-one,
+.image-two,
+.image-three,
+.image-four {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
+  background-attachment: fixed;
+}
+/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
+.main-message {
+  background-image: url("https://cdn.shopify.com/s/files/1/0078/1032/files/shutterstock_448263469_1_2048x2048.jpg?v=1479498474");
+}
+
+/* TODO: Replace the current image URL with your own */
+.image-one {
+  background-image: url("https://www.technogym.com/wpress/wp-content/uploads/2019/06/Small-Giardino-Verticale.jpg");
+}
+.image-two {
+  background-image: url("https://www.condorferries.co.uk/remote.axd/condorlivemedia.azureedge.net/media/11088/plastic-in-the-ocean.jpg?anchor=center&amp;mode=crop&amp;width=1920&amp;height=1080&amp;rnd=132215866990000000");
+}
+.image-three {
+  background-image: url("https://wi-images.condecdn.net/image/ENRNQa5Zgkn/crop/3240/f/gettyimages-625667906.jpg");
+}
+.image-four {
+  background-image: url("https://66.media.tumblr.com/4dfe5e825b39fc247bb62577eb0ef4a0/tumblr_pqxuf7FSc91t64oyu_1280.jpg");
+}
+/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
+
+/* TODO: Add more background images by repeating the process above */
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+/* TODO: Add a breakpoint if the screen is 700px or less */
+@media only screen and (max-width: 700px) {
+  .flex-container: flex-wrap: wrap;
+  top: 20%;
+}
+/* CSS rule sets */
+/* TODO: Add additional breakpoints based on your website's design*/
+h3 {
+  padding-top: -1px;
+  margin-top: 3%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 100px;
+  color: #124E78;
+  text-align: center;
+  text-transform: uppercase;
+}
